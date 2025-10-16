@@ -130,11 +130,11 @@
 	],
 	"routes": [
         {
-            "pattern": "build.cloudflare.dev",
+            "pattern": "vibecode-production.usepaggx.workers.dev",
             "custom_domain": true
         },
         {
-            "pattern": "*build-preview.cloudflare.dev/*",
+            "pattern": "*vibecode-production.usepaggx.workers.dev/*",
             "custom_domain": false,
             "zone_id": "db01fac4261b2604aacad8410443a3e2"
         }
