@@ -130,11 +130,11 @@
 	],
 	"routes": [
         {
-            "pattern": "vibecode-production.usepaggx.workers.dev",
+            "pattern": "hooc.app",
             "custom_domain": true
         },
         {
-            "pattern": "*vibecode-production.usepaggx.workers.dev/*",
+            "pattern": "*hooc.app/*",
             "custom_domain": false,
             "zone_id": "db01fac4261b2604aacad8410443a3e2"
         }
