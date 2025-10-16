@@ -105,8 +105,8 @@
     ],
     "kv_namespaces": [
         {
-            "binding": "VibecoderStore",
-            "id": "f066f3c2e4824981b48e8586c04db9c1",
+            "binding": "vibecode-production",
+            "id": "382202fb27e6474daf46514e7361712d",
             "remote": true
         }
     ],
