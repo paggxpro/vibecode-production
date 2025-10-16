@@ -4,7 +4,7 @@
  */
  {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "vibecode-production",
+	"name": "vibesdk-production",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-08-10",
 	"compatibility_flags": ["nodejs_compat"],
@@ -21,9 +21,6 @@
 	"observability": {
 		"enabled": true,
         "head_sampling_rate": 1,
-        "traces": {
-          "enabled": true
-        }
 	},
     "unsafe": {
         "bindings": [
@@ -77,8 +74,8 @@
 	"d1_databases": [
 		{
 			"binding": "DB",
-			"database_name": "vibecode-db",
-			"database_id": "d51ecc22-fa69-4f0a-839d-f14d2659c669",
+			"database_name": "vibesdk-db",
+			"database_id": "c4721a2b-b96a-428a-8b2a-b3d255b307e9",
 			"migrations_dir": "migrations",
 			"remote": true
 		}
@@ -102,14 +99,14 @@
     "r2_buckets": [
       {
         "binding": "TEMPLATES_BUCKET",
-        "bucket_name": "vibecode-templates",
+        "bucket_name": "vibesdk-templates",
         "remote": true
       }
     ],
     "kv_namespaces": [
         {
             "binding": "VibecoderStore",
-            "id": "382202fb27e6474daf46514e7361712d",
+            "id": "f066f3c2e4824981b48e8586c04db9c1",
             "remote": true
         }
     ],
@@ -144,11 +141,11 @@
     ],
 	"vars": {
         "TEMPLATES_REPOSITORY": "https://github.com/cloudflare/vibesdk-templates",
-        "ALLOWED_EMAIL": "cristiano@paggx.com.br",
-        "DISPATCH_NAMESPACE": "vibecode-default-namespace",
+        "ALLOWED_EMAIL": "",
+        "DISPATCH_NAMESPACE": "vibesdk-default-namespace",
         "ENABLE_READ_REPLICAS": "true",
-        "CLOUDFLARE_AI_GATEWAY": "vibecode-gateway",
-        "CUSTOM_DOMAIN": "govr.com.br",
+        "CLOUDFLARE_AI_GATEWAY": "vibesdk-gateway",
+        "CUSTOM_DOMAIN": "",
         "MAX_SANDBOX_INSTANCES": "10",
         "SANDBOX_INSTANCE_TYPE": "standard-3",
         "USE_CLOUDFLARE_IMAGES": false,
